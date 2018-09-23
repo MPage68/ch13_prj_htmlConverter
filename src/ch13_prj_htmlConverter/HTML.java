@@ -1,10 +1,7 @@
 package ch13_prj_htmlConverter;
 
-import java.util.Scanner;
-
 public class HTML {
-	
-	Scanner s = new Scanner(System.in);
+
 	
 	String greeting = "HTML Converter";
 	String html = "<h1>Grocery List</h1>\n" + "<ul>\n" + 
