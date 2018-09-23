@@ -26,10 +26,11 @@ public class HTML {
 
 	public String getOutput() {
 		html = html.replace("<li>", "* ");
-		html = html.replaceAll("<\\S*?>", "");
+		html = html.replaceAll("\\<[^\\>]*\\>", "");
+		html = html.replaceAll("    ", "");		
 
 		System.out.println("OUTPUT\n" + html);
 		return html;
 	}
-
+	  
 }
